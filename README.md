@@ -359,3 +359,23 @@ git log -1 --oneline
 SisaBaik dikembangkan sebagai proyek pembelajaran Pengembangan Web dengan fokus pada implementasi backend, pengelolaan database relasional, transaksi, autentikasi, otorisasi, dan pengujian API.
 
 Dokumentasi ini menjadi panduan instalasi, konfigurasi, penggunaan, serta pengujian aplikasi SisaBaik pada Chapter 8.
+
+@'
+
+## 15. Frontend Modul 9 – SisaBaik
+
+Frontend SisaBaik dikembangkan menggunakan Vue.js dan Vite sebagai aplikasi terpisah di dalam folder `frontend/`.
+
+### Persyaratan Sistem
+
+- Node.js versi 22 atau lebih baru.
+- npm.
+- Browser modern.
+
+### Instalasi dan Menjalankan Frontend
+
+Instal dependensi:
+
+```bash
+npm --prefix frontend ci
+```
