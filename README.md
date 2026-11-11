@@ -379,3 +379,100 @@ Instal dependensi:
 ```bash
 npm --prefix frontend ci
 ```
+
+**### Menjalankan Frontend**
+
+Jalankan frontend dalam mode pengembangan:
+
+```bash
+cd frontend
+npm run dev
+```
+
+Frontend dapat diakses melalui:
+
+```text
+http://127.0.0.1:5173/
+```
+
+**## 16. Integrasi dan Pengujian Modul 10**
+
+Modul 10 mengintegrasikan frontend Vue.js dengan backend Express.js dan database PostgreSQL untuk mendukung alur transaksi SisaBaik.
+
+**### Pengujian Alur Transaksi**
+
+Jalankan pengujian otomatis dari direktori utama proyek:
+
+```bash
+npm run workflow:test
+```
+
+Pengujian mencakup:
+
+- Reservasi dan pemulihan stok.
+- Pembatalan dan penolakan pesanan.
+- Konfirmasi dan penyelesaian pesanan.
+- Pembayaran dan pengambilan pesanan.
+- Transaksi makanan gratis.
+- Validasi dan pengelolaan foto penawaran.
+- Pemeriksaan hak akses dan kepemilikan.
+- Pengujian transaksi secara bersamaan.
+- Perhitungan dashboard.
+
+Hasil pengujian aktual:
+
+```text
+26 skenario alur transaksi lulus.
+Fixture pengujian sudah dihapus.
+```
+
+**### Build dan Preview Frontend**
+
+Build frontend:
+
+```bash
+cd frontend
+npm run build
+```
+
+Menjalankan preview hasil build:
+
+```bash
+npm run preview
+```
+
+Preview dapat diakses melalui:
+
+```text
+http://127.0.0.1:4173/
+```
+
+**### Build dan Menjalankan Aplikasi Terintegrasi**
+
+Dari direktori utama proyek, jalankan:
+
+```bash
+npm run build
+npm run start:local
+```
+
+Aplikasi dapat diakses melalui:
+
+```text
+http://127.0.0.1:3000/
+```
+
+Pastikan port 3000 tersedia sebelum menjalankan server.
+
+**### Pemeriksaan Database**
+
+Pemeriksaan database dilakukan menggunakan PostgreSQL melalui pgAdmin untuk melihat:
+
+- Data pesanan dan detail transaksi.
+- Status pembayaran.
+- Riwayat pembatalan.
+- Data dan status pengambilan pesanan.
+
+**### Catatan Hasil Pengembangan**
+
+Pada Modul 10, frontend dan backend berhasil diintegrasikan. Pengujian otomatis menunjukkan 26 skenario alur transaksi berhasil dijalankan. Build frontend dan build integrasi juga berhasil dilakukan, serta aplikasi dapat dijalankan melalui server lokal.

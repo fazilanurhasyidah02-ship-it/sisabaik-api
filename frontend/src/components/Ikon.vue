@@ -1,11 +1,5 @@
 <script setup>
-const props = defineProps({
-  nama: {
-    type: String,
-    required: true,
-  },
-});
-
+const props = defineProps({ nama: { type: String, required: true } });
 const bentuk = {
   panah: ["M5 12h14", "m13 6 6 6-6 6"],
   kiri: ["M19 12H5", "m11 6-6 6 6 6"],
@@ -34,12 +28,7 @@ const bentuk = {
   aman: ["M12 3 3 7v5c0 5 9 9 9 9s9-4 9-9V7l-9-4Z", "m8 12 3 3 5-6"],
   grafik: ["M4 3v18h17", "M8 16v-4", "M13 16V8", "M18 16V5"],
   info: ["M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0", "M12 11v6", "M12 7v.1"],
-  paket: [
-    "m12 3 9 5-9 5-9-5 9-5Z",
-    "M3 8v9l9 5 9-5V8",
-    "M12 13v9",
-    "m7 5 5 3 5-3",
-  ],
+  paket: ["m12 3 9 5-9 5-9-5 9-5Z", "M3 8v9l9 5 9-5V8", "M12 13v9", "m7 5 9 5"],
   mata: [
     "M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z",
     "M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0",
